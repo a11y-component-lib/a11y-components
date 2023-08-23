@@ -18,11 +18,12 @@ jobs:
             - name: Setup Node
               uses: actions/setup-node@v3
 
+            - uses: pnpm/action-setup@v2
             - run: pnpm install --frozen-lockfile
               name: Install Deps
 
-            - run: npm run build
+            - run: pnpm run build
               name: Build Application
 
-            - run: npm test
+            - run: pnpm test
               name: Run Tests
