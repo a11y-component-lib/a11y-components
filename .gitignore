@@ -26,3 +26,6 @@ dist-ssr
 # Coverage
 test/reports/**
 coverage/*
+
+# My todos
+TODO.md
