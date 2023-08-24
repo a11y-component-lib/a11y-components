@@ -40,9 +40,6 @@
       "@/types": [
           "types/*"
       ],
-      "@/components": [
-          "components/*"
-      ],
       "@/styles": [
           "styles/*"
       ],
@@ -51,6 +48,6 @@
       ]
   }
   },
-  "include": ["src/*", "test/**/*.ts", "test/**/*.tsx", "test"],
+  "include": ["src/*", "test/**/*.ts", "test/**/*.tsx", "test", "src/lib/main.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
