@@ -24,5 +24,5 @@ dist-ssr
 *.sw?
 
 # Coverage
-*/coverage/
+test/reports/**
 coverage/*
