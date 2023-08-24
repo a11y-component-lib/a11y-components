@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": [
+      "vite",
+      "vitest/globals",
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -18,8 +23,34 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": [
+          "*"
+      ],
+      "@/assets": [
+          "assets/*"
+      ],
+      "@/lib": [
+          "lib/*"
+      ],
+      "@/hooks": [
+          "hooks/*"
+      ],
+      "@/types": [
+          "types/*"
+      ],
+      "@/components": [
+          "components/*"
+      ],
+      "@/styles": [
+          "styles/*"
+      ],
+      "@/test": [
+          "tests/*"
+      ]
+  }
   },
-  "include": ["src"],
+  "include": ["src/*", "test/**/*.ts", "test/**/*.tsx", "test"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
