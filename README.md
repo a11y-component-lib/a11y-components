@@ -21,8 +21,7 @@
    pnpm run test:ui
 ```
 
-![Run tests in browser with coverage](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQxcnFodmx5MWVobGx4MW1qNzU3cjlxM2FxMTN1eDdmbXJxYmQzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wWws9747KYi8zoGJvu/giphy.gif)
-
+![Run tests in browser with coverage](https://github.com/a11y-component-lib/a11y-components/assets/48141726/8713b34e-8f35-4a6e-b88d-529fb3823945)
 
 ## Available Import Aliases
 
