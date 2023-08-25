@@ -1,3 +1,23 @@
+/* Color Palette Hex Codes (For Reference -- Need to convert these to Color Vars or Tailwind Classes or something)
+
+⭐ Primary Application Colors:
+Light Blue: #6D8EF7
+Dark Blue: #745FE8
+Magenta: #CA3A7D
+Orange: #EC6B2C
+Yellow: #F3B33E
+
+⭐ Neutrals: 
+neutral-100: #FFFFF
+neutral-200: #F4F5F7
+neutral-300: #E1E1E1
+neutral-400: #737581
+neutral-500: #4A4B53
+neutral-600: #000000
+
+*/
+
+/* Can be replaced, Vite | React out-of-the-box Boilerplate */ 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
