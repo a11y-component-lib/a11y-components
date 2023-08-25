@@ -21,7 +21,7 @@
    pnpm run test:ui
 ```
 
-![Run tests in browser with coverage](https://d1ro8r1rbfn3jf.cloudfront.net/ms_221571/gC2UXQSEBXOysmogL86oDyKm44I3iQ/Monosnap%2Bscreencast%2B2023-08-25%2B10-30-08.gif?Expires=1692977400&Signature=m3hZ0Isho8kDdVCnwVvDZM~XDD9bfOKUtDf3Y6t99RE~qXOmGy80iwONyv~RploP429Cf0FYt0Kmx0ENjTmIMhWSRFE6aNnKkXlElGhfKyu9mg9fYGrFBrbEkHT2mgbnNYElp2myKiAZfb4Gq-WYXht9zDzKYzeqrNwwsa9hWR33pUxBiIIfGa8kKuA5ENJHnGE3dlmhs-o~CfKyc3oeC3qlkIE386KCJuj4MQ5U4mtXjFKP9B92ukoSxDbEX6c4M1lM0WUGQlmiFd1HCdxtUzMHfpy3E1tn4wHOzubMui763Jh-JaL0F33y5EKdWxcQ9YQHWt5F9FuYzwty8t7dmg__&Key-Pair-Id=APKAJBCGYQYURKHBGCOA)
+![Run tests in browser with coverage](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQxcnFodmx5MWVobGx4MW1qNzU3cjlxM2FxMTN1eDdmbXJxYmQzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wWws9747KYi8zoGJvu/giphy.gif)
 
 
 ## Available Import Aliases
@@ -43,6 +43,17 @@ import '@/styles/App.css'
 ```
 
 ## Continuous Integration
+- _Push to **dev** or **main** branches and all pull requests will trigger a new Github Actions CI run._
+
 ```
    git push origin (dev | main)
 ```
+
+## Storybook Component Documentation
+- Add component stories to ```lib/<ComponentName>/ComponentName.stories.ts``` 
+- Start Storybook server by running ```pnpm run storybook```
+- Build Storybook server by running ```pnpm run build-storybook```
+
+## Publishing
+- Exclude test code and dist from published package.
+- Additional steps TBD.
