@@ -6,7 +6,8 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "types": [
       "vite",
-      "vitest/globals",
+      "vitest/globals", 
+      "@testing-library/jest-dom"
     ],
     "module": "ESNext",
     "skipLibCheck": true,
@@ -48,6 +49,12 @@
       ]
   }
   },
-  "include": ["src/*", "test/**/*.ts", "test/**/*.tsx", "test", "src/lib/main.tsx"],
+  "include": ["src/*", 
+    "test/**/*.ts", 
+    "test/**/*.tsx", 
+    "test/setup.ts", 
+    "test", 
+    "src/lib/main.tsx"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

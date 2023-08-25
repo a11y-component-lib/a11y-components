@@ -21,7 +21,7 @@ export function ExampleCard({ img, title, children }: React.PropsWithChildren<Ca
         height={img.height} 
         src={img.src} 
         alt={img.alt} 
-        data-card-img 
+        data-testid="example-card" 
       />
       {children}
     </article>
