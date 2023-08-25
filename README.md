@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# A11y Components 
+## Stack
+- React & TypeScript 
+- Vite
+- Tailwind CSS
+- pnpm
+- **Vitest** & **React Testing Library** for Testing
+- **Github Actions** for Continuous Integration
+- **Storybook** for Component ocumentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Usage
+- Add component code to ```lib/<ComponentName>/ComponentName.tsx``` and then demonstrate usage by rendering in ```src/App.tsx```
+- Build by running ```pnpm run build```
+- Publish package and increment version steps TBD
 
-Currently, two official plugins are available:
+## Testing Components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
+- Run tests in browser using:
 
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+   pnpm run test:ui
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Run tests in browser with coverage](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmQxcnFodmx5MWVobGx4MW1qNzU3cjlxM2FxMTN1eDdmbXJxYmQzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wWws9747KYi8zoGJvu/giphy.gif)
+
+
+## Available Import Aliases
+
+```js
+   "@/*" to import from 'src' 
+   "@/assets" to import from 'src/assets' 
+   "@/lib" to import from 'src/lib' 
+   "@/hooks" to import from 'src/hooks' 
+   "@/types" to import from 'src/types' 
+   "@/styles" to import from 'src/styles' 
+   "@/test" to import from 'src/test' 
+```
+
+*For example, __App.tsx__ imports global styles using the following syntax:*
+
+```js
+import '@/styles/App.css'
+```
+
+## Continuous Integration
+- _Push to **dev** or **main** branches and all pull requests will trigger a new Github Actions CI run._
+
+```
+   git push origin (dev | main)
+```
+
+## Storybook Component Documentation
+- Add component stories to ```lib/<ComponentName>/ComponentName.stories.ts``` 
+- Start Storybook server by running ```pnpm run storybook```
+- Build Storybook server by running ```pnpm run build-storybook```
+
+## Publishing
+- Exclude test code and dist from published package.
+- Additional steps TBD.
